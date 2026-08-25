@@ -662,3 +662,13 @@ h2 {
         font-size: 12px;
     }
 }
+
+#top {
+    display:grid;
+    grid-template-columns:350px auto 140px auto 220px;
+}
+
+#top {
+    display:grid;
+    grid-template-columns:350px auto 140px auto 220px;
+}
