@@ -1,7 +1,7 @@
 const monsters = {
   Damage:[
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0221_1_5.png", // Dark Stark 
-    "monsters/Flex.png", // Flexible Draft
+    "Flex.png", // Flexible Draft
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0221_1_3.png", // Wind Stark
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0220_1_1.png", // Water Frieren
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0222_1_1.png", // Water Fern
@@ -117,7 +117,7 @@ const monsters = {
   ],
 
   Support:[
-    "monsters/Water_Gandalf.png", // test
+    "Water_Gandalf.png", // test
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0082_3_4.png", // Light Vagabond
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0204_1_1.png", // Water Gandalf
     "https://do9d4mpqk497d.cloudfront.net/common/images/monsters/unit_icon_0204_1_3.png", // Wind Gandalf
