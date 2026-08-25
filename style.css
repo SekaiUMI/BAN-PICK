@@ -397,3 +397,268 @@ body.preview #top{
  opacity:1;
  box-shadow:0 0 10px #ffcc66;
 }
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* TOP AREA */
+#top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 10px;
+    min-height: auto;
+}
+
+/* TEAM */
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.grid {
+    grid-template-columns: repeat(2, 70px);
+    grid-template-rows: repeat(2, 70px);
+    gap: 8px;
+}
+
+/* SLOT */
+.slot {
+    width: 65px;
+    height: 65px;
+}
+
+/* PLAYER LABEL */
+.player-label,
+.left-label,
+.right-label {
+    min-width: auto;
+    font-size: 18px;
+    margin: 0;
+}
+
+.right-label {
+    text-align: center;
+    transform: none;
+}
+
+/* VS */
+#vs {
+    width: auto;
+    font-size: 48px;
+}
+
+/* EXPORT */
+#export {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* TOOLS */
+#tools {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* TABS */
+#tabs {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+    padding: 0 8px;
+}
+
+.tab {
+    min-width: 0;
+    padding: 10px 5px;
+    font-size: 16px;
+}
+
+/* PANEL */
+#panel {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+/* MONSTER FILTER */
+#monsterFilter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 5px;
+}
+
+.filter {
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+/* MONSTER LIST */
+#monster-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px 5px;
+}
+
+/* MONSTER */
+.monster {
+    width: 100%;
+    max-width: 72px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    justify-self: center;
+}
+
+/* HISTORY */
+#history {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#history .historyRow {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    gap: 8px;
+}
+
+/* HR */
+hr {
+    margin: 15px 10px;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 20px;
+}
+
+/* ============================= */
+/* 📱 SMALL PHONE */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    #top {
+        padding: 15px 5px;
+        gap: 12px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 60px);
+        grid-template-rows: repeat(2, 60px);
+        gap: 7px;
+    }
+
+    .slot {
+        width: 56px;
+        height: 56px;
+        border-width: 3px;
+    }
+
+    .team {
+        gap: 8px;
+    }
+
+    .player-label,
+    .left-label,
+    .right-label {
+        font-size: 16px;
+    }
+
+    #vs {
+        font-size: 40px;
+    }
+
+    #monster-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .monster {
+        max-width: 65px;
+    }
+
+    #panel {
+        height: 350px;
+        padding: 8px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 9px 3px;
+    }
+
+    #export button,
+    #tools button {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+}
+
+/* ============================= */
+/* 📱 VERY SMALL PHONE */
+/* ============================= */
+
+@media (max-width: 360px) {
+
+    .grid {
+        grid-template-columns: repeat(2, 52px);
+        grid-template-rows: repeat(2, 52px);
+        gap: 6px;
+    }
+
+    .slot {
+        width: 48px;
+        height: 48px;
+    }
+
+    .player-label,
+    .left-label,
+    .right-label {
+        font-size: 14px;
+    }
+
+    #vs {
+        font-size: 34px;
+    }
+
+    #monster-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+
+    .monster {
+        max-width: 58px;
+    }
+
+    .tab {
+        font-size: 12px;
+    }
+}
