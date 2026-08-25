@@ -1,65 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-<meta charset="utf-8">
-<title>Draft</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+
+    <!-- สำคัญสำหรับมือถือ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Draft</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- ================= TOP ================= -->
     <div id="top">
-        <div class="player-label left-label">1st Player</div>
+
+        <!-- PLAYER 1 -->
+        <div class="player-label left-label">
+            1st Player
+        </div>
+
         <div class="team left">
+
             <div class="slot"></div>
+
             <div class="grid">
                 <div class="slot"></div>
                 <div class="slot"></div>
                 <div class="slot"></div>
                 <div class="slot"></div>
             </div>
+
         </div>
 
-        <div id="vs">VS</div>
 
+        <!-- VS -->
+        <div id="vs">
+            VS
+        </div>
+
+
+        <!-- PLAYER 2 -->
         <div class="team right">
+
             <div class="grid">
                 <div class="slot"></div>
                 <div class="slot"></div>
                 <div class="slot"></div>
                 <div class="slot"></div>
             </div>
+
             <div class="slot"></div>
-            <div class="player-label right-label">2nd Player</div>
+
+            <div class="player-label right-label">
+                2nd Player
+            </div>
+
         </div>
 
+
+        <!-- EXPORT -->
         <div id="export">
-            <button id="exportBtn">Export</button>
+            <button id="exportBtn">
+                Export
+            </button>
+
             <div id="historyT"></div>
         </div>
 
+
+        <!-- TOOLS -->
         <div id="tools">
-            <button id="banBtn">🚫 Ban</button>
-            <button id="leadBtn">🔥 Leader</button>
+
+            <button id="banBtn">
+                🚫 Ban
+            </button>
+
+            <button id="leadBtn">
+                🔥 Leader
+            </button>
+
         </div>
-    </div>
-<hr>
-    <div id="tabs">
-        <div id="tabMonster" class="tab active">Monster List</div>
-        <div id="tabHistory" class="tab">History</div></div>
-        <div id="panel">
-            <div id="monsterFilter">
-                <button class="filter active" data-type="all">All</button>
-                <button class="filter" data-type="Damage">Damage</button>
-                <button class="filter" data-type="Support">Support</button>
-                <button class="filter" data-type="Sup_Damage">Sup-Damge</button>
-                <button class="filter" data-type="Control">Control</button>
-            </div>
-            <div id="monster-list"></div>
-            <div id="history" style="display:none"></div>
-        </div>
+
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-<script src="app.js"></script>
+
+    <!-- DIVIDER -->
+    <hr>
+
+
+    <!-- ================= TABS ================= -->
+    <div id="tabs">
+
+        <div id="tabMonster" class="tab active">
+            Monster List
+        </div>
+
+        <div id="tabHistory" class="tab">
+            History
+        </div>
+
+    </div>
+
+
+    <!-- ================= PANEL ================= -->
+    <div id="panel">
+
+        <!-- FILTER -->
+        <div id="monsterFilter">
+
+            <button class="filter active" data-type="all">
+                All
+            </button>
+
+            <button class="filter" data-type="Damage">
+                Damage
+            </button>
+
+            <button class="filter" data-type="Support">
+                Support
+            </button>
+
+            <button class="filter" data-type="Sup_Damage">
+                Sup-Damage
+            </button>
+
+            <button class="filter" data-type="Control">
+                Control
+            </button>
+
+        </div>
+
+
+        <!-- MONSTER LIST -->
+        <div id="monster-list"></div>
+
+
+        <!-- HISTORY -->
+        <div id="history" style="display:none"></div>
+
+    </div>
+
+
+    <!-- ================= SCRIPT ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
